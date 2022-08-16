@@ -33,8 +33,8 @@ torch.manual_seed(RANDOM_SEED)
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print(device)
 
-ds_train_path = '/content/drive/MyDrive/AI/Un-Real/train.csv'
-ds_test_path = '/content/drive/MyDrive/AI/Un-Real/test.csv'
+ds_train_path = './train.csv'
+ds_test_path = './test.csv'
 
 df = pd.read_csv(ds_train_path)
 df.head()
